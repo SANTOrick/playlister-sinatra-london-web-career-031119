@@ -1,6 +1,6 @@
 <h1>LIST OF SONGS</h1>
 <ul>
-<% @songs.each do |song| %>
+<% @songs.map do |song| %> <!-- WE WERE DOING EACH!!!!! -->
 <li><%=  song.name%></li>
 <% end %>
 </ul>
